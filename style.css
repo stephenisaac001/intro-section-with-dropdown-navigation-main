@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color:  rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.snap {
+    background-color: rgb(247, 247, 247);
+    padding: 20px;
+    padding-left: 4%;
+}
+#logo {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.list li {
+    color: black;
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.list ul {
+    display: flex;
+}
+
+.list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+ #out {
+    color: black;
+    text-decoration: none;
+ }
+ #out:hover {
+    color: rgb(197, 197, 197);
+ }
+
+.aa {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    left: 10%;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 10px;
+    box-shadow: 5px 3px 5px 3px rgba(214, 210, 210, 0.982);
+}
+  
+.aa a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+  
+.aa a:hover {background-color: #f1f1f1}
+  
+.now:hover .aa {
+    display: block;
+}
+
+.list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.AA {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 35px;
+    left: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-top: 1px;
+    font-size: 12px;
+    box-shadow: 5px 3px 5px 3px rgba(214, 210, 210, 0.982);
+}
+  
+.AA a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.AA a:hover {background-color: #f1f1f1}
+  
+.now1:hover .AA {
+    display: block;
+}
+
+.list2 {
+    padding-left: 50%;
+    margin-top: 5px;
+}
+#log {
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+}
+#ster {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+.make {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+}
+#work {
+    padding: 10px;
+    padding-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#mote {
+    font-size: 70px;
+}
+#sync {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    line-height: 20px;
+    color: rgb(149, 148, 148);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.learn {
+    padding-top: 20%;
+    padding-bottom: 30%;
+}
+#arn {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.client {
+    display: flex;
+    padding-top: 115px;
+    padding-bottom: 10px; 
+}
+#databiz {
+    float: right;
+    margin-right: 2%;
+
+}
+#audiophile {
+    float: left;
+    margin-left: 8%;
+}
+#meet {
+    float: left;
+    margin-left: 12%;
+}
+#maker {
+    float: left;
+    margin-left: 12%;
+}
+
+.image {
+    padding-left: 10%;
+}
+
+@media only screen and (min-width: 420px) {
+     .hg{
+    display: none;
+}
+}
+
+@media only screen and (max-width: 420px) {
+    .make {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image {
+        display: none; 
+    }
+    .list {
+        display: none;
+    }
+    #ster {
+        display: none;
+    }
+    #mote {
+        font-size: 35px;
+    }
+    #arn {
+        background-color: #000;
+        color: #fff;
+    }
+    .client{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+     .client img {
+        padding-bottom: 30px;
+    }
+}
